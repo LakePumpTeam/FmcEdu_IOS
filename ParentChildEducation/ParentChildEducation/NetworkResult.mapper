@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    
+    <dict>
+        
+        <key>LoginResult</key>
+        <array>
+            <string>OptionInfo:optionList</string>
+        </array>
+        
+        <key>ProvResult</key>
+        <array>
+            <string>ProvInfo:provinces</string>
+        </array>
+        
+        <key>CityResult</key>
+        <array>
+            <string>CityInfo:cities</string>
+        </array>
+        
+        <key>SchoolResult</key>
+        <array>
+            <string>SchoolInfo:schools</string>
+        </array>
+        
+        <key>ClassResult</key>
+        <array>
+            <string>ClassInfo:classList</string>
+        </array>
+        
+        <key>ParentsListResult</key>
+        <array>
+            <string>ParentListInfo:parentsAuditList</string>
+        </array>
+        
+        
+        <key>NewsDetailResult</key>
+        <array>
+            <string>CommentInfo:commentList</string>
+            <string>NSString:imageUrls</string>
+        </array>
+        
+        <key>NewsListResult</key>
+        <array>
+            <string>NewsListInfo:newsList</string>
+        </array>
+        
+        <key>NewsListInfo</key>
+        <array>
+            <string>NewsListImagesInfo:imageUrls</string>
+            <string>CommentInfo:commentList</string>
+        </array>
+        
+        <key>NewsListImagesInfo</key>
+        <array>
+            <string>ImageInfo:origUrl</string>
+            <string>ImageInfo:thumbUrl</string>
+        </array>
+        
+        <!--> BBS 新闻列表<-->
+        <key>BBSNewsListResult</key>
+        <array>
+            <string>BBSNewsListInfo:newsList</string>
+        </array>
+        
+        <key>BBSNewsListInfo</key>
+        <array>
+            <string>NewsListImagesInfo:imageUrls</string>
+        </array>
+        
+        <key>BBSNewsDetailResult</key>
+        <array>
+            <string>BBSSelectInfo:selections</string>
+        </array>
+        
+        <key>AdResult</key>
+        <array>
+            <string>AdInfo:slideList</string>
+        </array>
+        
+        <key>TaskListResult</key>
+        <array>
+            <string>TaskInfo:taskList</string>
+        </array>
+        
+        <key>TaskDetailResult</key>
+        <array>
+            <string>TaskCommentInfo:commentList</string>
+        </array>
+        
+        <key>StudentListResult</key>
+        <array>
+            <string>StudentInfo:studentList</string>
+        </array>
+        
+        
+    </dict>
+    
+</plist>

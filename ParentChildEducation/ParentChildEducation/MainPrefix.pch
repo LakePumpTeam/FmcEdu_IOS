@@ -1,0 +1,52 @@
+//
+//  MainPrefix.pch
+//  ParentChildEducation
+//
+//  Created by zlan.zhang on 15/5/6.
+//  Copyright (c) 2015年 lakeTechnology.com. All rights reserved.
+//
+
+#ifndef ParentChildEducation_MainPrefix_pch
+#define ParentChildEducation_MainPrefix_pch
+
+// 系统框架
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+// 网络框架
+#import "AFNetworking.h"
+#import "JSONKit.h"
+#import "NetWorkTask.h"
+
+// 全局信息
+#import "CommonDef.h"
+#import "Debug.h"
+#import "CommonFunc.h"
+#import "NetWorkTask.h"
+#import "DataController.h"
+#import "BusinessSearchNetResult.h"
+
+// 扩展
+#import "UIColor+Utility.h"
+#import "NSString+Utility.h"
+#import "UILabel+Utility.h"
+#import "UIView+Utility.h"
+#import "UIButton+Utility.h"
+#import "UIImage+Utility.h"
+#import "UITextField+Utility.h"
+#import "Base64.h"
+#import "NSMutableDictionary+Utility.h"
+#import "NSCalendar+Utility.h"
+#import "NSDateFormatter+Unility.h"
+#import "NSAttributedString+Attributes.h"
+#import "UITextView+Utility.h"
+#import "UIImageView+WebCache.h"
+
+// =======================================================================
+// 第三方
+// =======================================================================
+#import "WCAlertView.h"
+#import "CustomButton.h"
+#import "LoadView.h"
+
+#endif
