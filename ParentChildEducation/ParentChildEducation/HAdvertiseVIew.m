@@ -111,7 +111,7 @@ typedef enum
 //            [_imagesUrlArr addObject:advertiseInfo.imgUrl];
 //            [_schemaUrlArr addObject:advertiseInfo.schemaUrl];
             
-            NSString *imageName = [NSString stringWithFormat:@"test%d",i];
+//            NSString *imageName = [NSString stringWithFormat:@"test%d",i];
             
             UIImageView *imageView = [[UIImageView alloc] init];
             [imageView sd_setImageWithURL:[NSURL URLWithString:_imagesUrlArr[i]]

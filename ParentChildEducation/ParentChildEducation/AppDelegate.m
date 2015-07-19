@@ -26,9 +26,6 @@
 #import "PopTableViewCell.h"
 #import "OptionInfo.h"
 
-// 百度推
-#import "BPush.h"
-
 typedef NS_ENUM(NSInteger, ControllTag) {
     eSearchPwdAlertTag = 100,
     eNoPassAuditAlertTag,
@@ -37,7 +34,7 @@ typedef NS_ENUM(NSInteger, ControllTag) {
 
 #define kPopCellHeight                              50
 
-@interface AppDelegate ()<NetworkPtc, UIPopoverListViewDataSource, UIPopoverListViewDelegate, BPushDelegate>
+@interface AppDelegate ()<NetworkPtc, UIPopoverListViewDataSource, UIPopoverListViewDelegate>
 
 @property (nonatomic, strong) LoginResult *loginResult;
 
@@ -97,41 +94,6 @@ typedef NS_ENUM(NSInteger, ControllTag) {
         UIRemoteNotificationType myTypes = UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound;
         [[UIApplication sharedApplication] registerForRemoteNotificationTypes:myTypes];
     }
-#warning 上线 AppStore 时需要修改 pushMode
-    // 在 App 启动时注册百度云推送服务,需要提供 Apikey
-    [BPush registerChannel:launchOptions apiKey:@"ZNUhj4wNldmuO58Q5wQ7GoGz" pushMode:BPushModeDevelopment isDebug:NO];
-    
-    // 设置 BPush 的回调
-    [BPush setDelegate:self];
-    
-    // App 是⽤用户点击推送消息启动
-    NSDictionary *userInfo = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
-    if (userInfo) {
-        [BPush handleNotification:userInfo];
-    }
-}
-
-- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
-{
-    [application registerForRemoteNotifications];
-}
-
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
-{
-    [BPush registerDeviceToken:deviceToken];
-    [BPush bindChannel];
-}
-
-// 当 DeviceToken 获取失败时,系统会回调此⽅方法
-- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:( NSError *)error
-{
-    NSLog(@"DeviceToken 获取失败,原因:%@",error);
-}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
-{
-    // App 收到推送通知
-    [BPush handleNotification:userInfo];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -474,12 +436,6 @@ typedef NS_ENUM(NSInteger, ControllTag) {
    heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 50;
-}
-
-#pragma mark - BPushDelegate
-- (void)onMethod:(NSString*)method response:(NSDictionary*)data;
-{
-    
 }
 
 @end

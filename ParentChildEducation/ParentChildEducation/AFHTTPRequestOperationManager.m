@@ -99,8 +99,6 @@
 {
     NSError *serializationError = nil;
     NSMutableURLRequest *request = [self.requestSerializer requestWithMethod:method URLString:[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString] parameters:parameters error:&serializationError];
-#warning 测试
-    [request setTimeoutInterval:25];
     
     if (serializationError) {
         if (failure) {

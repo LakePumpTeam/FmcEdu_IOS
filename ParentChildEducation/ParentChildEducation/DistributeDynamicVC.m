@@ -94,7 +94,6 @@ typedef NS_ENUM(NSInteger, ControllTag)
 // 图片cell
 - (void)setupViewSubsImagesCell:(UIView *)viewParent
 {
-#warning 临时解决
     [viewParent removeAllSubviews];
     
     NSInteger spaceYStart = 5;

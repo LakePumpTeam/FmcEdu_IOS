@@ -423,7 +423,7 @@ typedef NS_ENUM(NSInteger, BusinessType) {
     // =======================================================================
     if ([newsInfo.subject isStringSafe])
     {
-        CGSize titleSize = [newsInfo.subject sizeWithFont:kSmallTitleFont constrainedToSize:CGSizeMake(viewSize->width - spaceXStart*2, CGFLOAT_MAX)];
+        CGSize titleSize = [newsInfo.subject sizeWithFontCompatible:kSmallTitleFont constrainedToSize:CGSizeMake(viewSize->width - spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
         
         UILabel *titleLabel = (UILabel *)[viewParent viewWithTag:eCellTitleLabelTag];
         
@@ -448,12 +448,12 @@ typedef NS_ENUM(NSInteger, BusinessType) {
     // =======================================================================
     
     // 计算行高
-    CGFloat rowHeight = [@"泉吧" sizeWithFont:kMiddleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart, CGFLOAT_MAX)].height;
+    CGFloat rowHeight = [@"泉吧" sizeWithFontCompatible:kMiddleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail].height;
     NSInteger maxRowCount = 5;
     
     if ([newsInfo.content isStringSafe])
     {
-        CGSize realContentSize = [newsInfo.content sizeWithFont:kMiddleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart*2, CGFLOAT_MAX)];
+        CGSize realContentSize = [newsInfo.content sizeWithFontCompatible:kMiddleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
         
         CGFloat contentHeight;
         
@@ -643,7 +643,7 @@ typedef NS_ENUM(NSInteger, BusinessType) {
 //                   @"http://ww2.sinaimg.cn/thumbnail/9ecab84ejw1emgd5nd6eaj20c80c8q4a.jpg"];
     
     // 计算行高
-    CGFloat rowHeight = [@"泉吧" sizeWithFont:kMiddleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart, CGFLOAT_MAX)].height;
+    CGFloat rowHeight = [@"泉吧" sizeWithFontCompatible:kMiddleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail].height;
     NSInteger maxRowCount = 5;
     
     // =======================================================================
@@ -651,7 +651,7 @@ typedef NS_ENUM(NSInteger, BusinessType) {
     // =======================================================================
     if ([newsInfo.subject isStringSafe])
     {
-        CGSize titleSize = [newsInfo.subject sizeWithFont:kSmallTitleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart*2, CGFLOAT_MAX)];
+        CGSize titleSize = [newsInfo.subject sizeWithFontCompatible:kSmallTitleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
         
         UILabel *titleLabel = (UILabel *)[viewParent viewWithTag:eCellTitleLabelTag];
         
@@ -676,7 +676,7 @@ typedef NS_ENUM(NSInteger, BusinessType) {
     // =======================================================================
     if ([newsInfo.content isStringSafe])
     {
-        CGSize realContentSize = [newsInfo.content sizeWithFont:kMiddleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart*2, CGFLOAT_MAX)];
+        CGSize realContentSize = [newsInfo.content sizeWithFontCompatible:kMiddleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
         
         CGFloat contentHeight;
         NSNumber *isExpand = [_isExpandDictionary objectForKey:indexPath];
@@ -751,7 +751,7 @@ typedef NS_ENUM(NSInteger, BusinessType) {
     // 更多
     // =======================================================================
     
-    CGSize realContentSize = [newsInfo.content sizeWithFont:kMiddleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart*2, CGFLOAT_MAX)];
+    CGSize realContentSize = [newsInfo.content sizeWithFontCompatible:kMiddleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
     
     // 内容超过5行，显示查看更多
     if (realContentSize.height > maxRowCount*rowHeight)
@@ -899,7 +899,7 @@ typedef NS_ENUM(NSInteger, BusinessType) {
     // =======================================================================
     if ([newsInfo.subject isStringSafe])
     {
-        CGSize titleSize = [newsInfo.subject sizeWithFont:kSmallTitleFont constrainedToSize:CGSizeMake(viewSize->width - spaceXStart*2, CGFLOAT_MAX)];
+        CGSize titleSize = [newsInfo.subject sizeWithFontCompatible:kSmallTitleFont constrainedToSize:CGSizeMake(viewSize->width - spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
         
         UILabel *titleLabel = (UILabel *)[viewParent viewWithTag:eCellTitleLabelTag];
         
@@ -924,12 +924,12 @@ typedef NS_ENUM(NSInteger, BusinessType) {
     // =======================================================================
     
     // 计算行高
-    CGFloat rowHeight = [@"泉吧" sizeWithFont:kMiddleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart, CGFLOAT_MAX)].height;
+    CGFloat rowHeight = [@"泉吧" sizeWithFontCompatible:kMiddleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail].height;
     NSInteger maxRowCount = 5;
     
     if ([newsInfo.content isStringSafe])
     {
-        CGSize realContentSize = [newsInfo.content sizeWithFont:kMiddleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart*2, CGFLOAT_MAX)];
+        CGSize realContentSize = [newsInfo.content sizeWithFontCompatible:kMiddleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
         
         CGFloat contentHeight;
         

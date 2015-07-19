@@ -124,7 +124,7 @@ typedef NS_ENUM(NSInteger, ControllTag) {
         
         [viewParent addSubview:provLabel];
     }
-    CGSize provSize = [provString sizeWithFont:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX)];
+    CGSize provSize = [provString sizeWithFontCompatible:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
     
     provLabel.frame = CGRectMake(spaceXStart, spaceYStart, provSize.width, provSize.height);
     provLabel.text = provString;
@@ -159,7 +159,7 @@ typedef NS_ENUM(NSInteger, ControllTag) {
         [viewParent addSubview:cityLabel];
 
     }
-    CGSize citySize = [cityString sizeWithFont:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX)];
+    CGSize citySize = [cityString sizeWithFontCompatible:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
     
     cityLabel.frame = CGRectMake(spaceXStart, spaceYStart, citySize.width, citySize.height);
     cityLabel.text = cityString;
@@ -195,7 +195,7 @@ typedef NS_ENUM(NSInteger, ControllTag) {
         [viewParent addSubview:schoolLabel];
 
     }
-    CGSize schoolSize = [schoolString sizeWithFont:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX)];
+    CGSize schoolSize = [schoolString sizeWithFontCompatible:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX)lineBreakMode:NSLineBreakByTruncatingTail];
     
     schoolLabel.frame = CGRectMake(spaceXStart, spaceYStart, schoolSize.width, schoolSize.height);
     schoolLabel.text = schoolString;
@@ -230,7 +230,7 @@ typedef NS_ENUM(NSInteger, ControllTag) {
         [viewParent addSubview:classLabel];
 
     }
-    CGSize classSize = [classString sizeWithFont:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX)];
+    CGSize classSize = [classString sizeWithFontCompatible:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
     
     classLabel.frame = CGRectMake(spaceXStart, spaceYStart, classSize.width, classSize.height);
     classLabel.text = classString;
@@ -265,7 +265,7 @@ typedef NS_ENUM(NSInteger, ControllTag) {
         [viewParent addSubview:headTeacherLabel];
         
     }
-    CGSize headTeacherSize = [headTeacherString sizeWithFont:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX)];
+    CGSize headTeacherSize = [headTeacherString sizeWithFontCompatible:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
     
     headTeacherLabel.frame = CGRectMake(spaceXStart, spaceYStart, headTeacherSize.width, headTeacherSize.height);
     headTeacherLabel.text = headTeacherString;
@@ -300,7 +300,7 @@ typedef NS_ENUM(NSInteger, ControllTag) {
         [viewParent addSubview:studentNameLabel];
         
     }
-    CGSize studentNameSize = [studentNameString sizeWithFont:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX)];
+    CGSize studentNameSize = [studentNameString sizeWithFontCompatible:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
     
     studentNameLabel.frame = CGRectMake(spaceXStart, spaceYStart, studentNameSize.width, studentNameSize.height);
     studentNameLabel.text = studentNameString;
@@ -335,7 +335,7 @@ typedef NS_ENUM(NSInteger, ControllTag) {
         [viewParent addSubview:studentSexLabel];
         
     }
-    CGSize studentSexSize = [studentSexString sizeWithFont:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX)];
+    CGSize studentSexSize = [studentSexString sizeWithFontCompatible:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
     
     studentSexLabel.frame = CGRectMake(spaceXStart, spaceYStart, studentSexSize.width, studentSexSize.height);
     studentSexLabel.text = studentSexString;
@@ -370,7 +370,7 @@ typedef NS_ENUM(NSInteger, ControllTag) {
         [viewParent addSubview:studentBirthLabel];
         
     }
-    CGSize studentBirthSize = [studentBirthString sizeWithFont:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX)];
+    CGSize studentBirthSize = [studentBirthString sizeWithFontCompatible:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
     
     studentBirthLabel.frame = CGRectMake(spaceXStart, spaceYStart, studentBirthSize.width, studentBirthSize.height);
     studentBirthLabel.text = studentBirthString;
@@ -404,7 +404,7 @@ typedef NS_ENUM(NSInteger, ControllTag) {
         [viewParent addSubview:parentNameLabel];
         
     }
-    CGSize parentNameSize = [parentNameString sizeWithFont:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX)];
+    CGSize parentNameSize = [parentNameString sizeWithFontCompatible:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
     
     parentNameLabel.frame = CGRectMake(spaceXStart, spaceYStart, parentNameSize.width, parentNameSize.height);
     parentNameLabel.text = parentNameString;
@@ -439,7 +439,7 @@ typedef NS_ENUM(NSInteger, ControllTag) {
         [viewParent addSubview:cellPhoneLabel];
         
     }
-    CGSize cellPhoneSize = [cellPhoneString sizeWithFont:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX)];
+    CGSize cellPhoneSize = [cellPhoneString sizeWithFontCompatible:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
     
     cellPhoneLabel.frame = CGRectMake(spaceXStart, spaceYStart, cellPhoneSize.width, cellPhoneSize.height);
     cellPhoneLabel.text = cellPhoneString;
@@ -475,7 +475,7 @@ typedef NS_ENUM(NSInteger, ControllTag) {
         
     }
     // 重置frame
-    CGSize relationSize = [relationString sizeWithFont:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX)];
+    CGSize relationSize = [relationString sizeWithFontCompatible:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
     
     relationLabel.frame = CGRectMake(spaceXStart, spaceYStart, relationSize.width, relationSize.height);
     relationLabel.text = relationString;
@@ -511,7 +511,7 @@ typedef NS_ENUM(NSInteger, ControllTag) {
         
     }
     // 重置frame
-    CGSize addressSize = [addressString sizeWithFont:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX)];
+    CGSize addressSize = [addressString sizeWithFontCompatible:kSmallTitleFont constrainedToSize:CGSizeMake(viewParent.width-spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
     
     addressLabel.frame = CGRectMake(spaceXStart, spaceYStart, addressSize.width, addressSize.height);
     addressLabel.text = addressString;

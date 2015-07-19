@@ -619,7 +619,7 @@ typedef NS_ENUM(NSInteger, BusinessType) {
     // =======================================================================
     if ([newsInfo.content isStringSafe])
     {
-        CGSize realContentSize = [newsInfo.content sizeWithFont:kMiddleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart*2, CGFLOAT_MAX)];
+        CGSize realContentSize = [newsInfo.content sizeWithFontCompatible:kMiddleFont constrainedToSize:CGSizeMake(viewSize->width-spaceXStart*2, CGFLOAT_MAX) lineBreakMode:NSLineBreakByTruncatingTail];
         
         CGFloat contentHeight;
         NSNumber *isExpand = [_isExpandDictionary objectForKey:indexPath];
@@ -939,7 +939,6 @@ typedef NS_ENUM(NSInteger, BusinessType) {
 // 评论列表视图
 - (void)setupViewSubsCommentView:(UIView *)viewParent inSize:(CGSize *)viewSize commentList:(NSMutableArray *)commentList
 {
-#warning 临时解决
     [viewParent removeAllSubviews];
     
     NSInteger spaceYStart = 0;

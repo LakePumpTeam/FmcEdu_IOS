@@ -1407,7 +1407,7 @@ typedef NS_ENUM(NSInteger, ControllTag) {
             _modifyRelateInfoResult.cityId = selectProvInfo.cityId;
             _modifyRelateInfoResult.cityName = selectProvInfo.cityName;
             
-            CGSize textSize = [_selectCityInfo.name sizeWithFont:kSmallTitleFont constrainedToSize:CGSizeMake(kScreenWidth-100, _cityView.height)];
+            CGSize textSize = [_selectCityInfo.name sizeWithFontCompatible:kSmallTitleFont constrainedToSize:CGSizeMake(kScreenWidth-100, _cityView.height) lineBreakMode:NSLineBreakByTruncatingTail];
             
             // 更新label
             label.text = _selectCityInfo.name;

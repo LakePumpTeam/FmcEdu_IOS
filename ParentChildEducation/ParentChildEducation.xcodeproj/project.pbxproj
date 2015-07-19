@@ -73,7 +73,6 @@
 		058A4CAC1AFDC19200C063EA /* NSMutableDictionary+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 058A4CAB1AFDC19200C063EA /* NSMutableDictionary+Utility.m */; };
 		058A4CAF1AFDC5BA00C063EA /* RegisterAssociatedInforVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 058A4CAE1AFDC5B900C063EA /* RegisterAssociatedInforVC.m */; };
 		05A80B691AF897960090A894 /* UIColor+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A80B681AF897960090A894 /* UIColor+Utility.m */; };
-		05BDA7181B098449001B0A29 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05BDA7171B098449001B0A29 /* Info.plist */; };
 		05D098F91B0820EC0023E515 /* HeaderTeacherForHomePageResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D098F81B0820EC0023E515 /* HeaderTeacherForHomePageResult.m */; };
 		05D098FC1B0858A30023E515 /* AlterAssociatedInforVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D098FB1B0858A30023E515 /* AlterAssociatedInforVC.m */; };
 		05D0C23E1AFB90CE00DFAC31 /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D0C23A1AFB90CE00DFAC31 /* phone@2x.png */; };
@@ -2245,7 +2244,7 @@
 		05D7EBDE1AF77403008692E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = lakeTechnology.com;
 				TargetAttributes = {
 					05D7EBE51AF77403008692E7 = {
@@ -2401,7 +2400,6 @@
 				05DDF1B31B0D7964008FB9CA /* AddImageIcon@3x.png in Resources */,
 				05E865BF1B1316F500CF9DF2 /* DetailLikeUnSelected@2x.png in Resources */,
 				05D19FAE1B023BF700B2462C /* femalePhoto@3x.png in Resources */,
-				05BDA7181B098449001B0A29 /* Info.plist in Resources */,
 				05DADB4C1B1E9C5700EED667 /* arrow@3x.png in Resources */,
 				0512AC591AFE595B00E8A40D /* registerExamine@2x.png in Resources */,
 				B0886E891B28419500F69DF9 /* RequestNewsDetail.json in Resources */,
@@ -2825,7 +2823,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos8.3;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
@@ -2856,7 +2854,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos8.3;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};

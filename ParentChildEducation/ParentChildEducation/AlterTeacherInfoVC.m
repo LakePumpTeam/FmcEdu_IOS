@@ -365,7 +365,6 @@ typedef NS_ENUM(NSInteger, ControllerTag)
 // 履历
 - (void)setupViewSubsResume:(UIView *)viewParent
 {
-#warning test
     viewParent.layer.borderColor = [UIColor colorWithHex:0xDCDCDC alpha:1.0].CGColor;
     viewParent.layer.borderWidth = 1.0;
     viewParent.backgroundColor = kWhiteColor;
@@ -531,7 +530,6 @@ typedef NS_ENUM(NSInteger, ControllerTag)
             // 获取成功
             if ([parentRelateInfoResult.isSuccess integerValue] == 0)
             {
-#warning todo
                 // 刷新页面
                 if ([_teacherInfoResult.teacherName isStringSafe]) {
                     _teacherName = _teacherInfoResult.teacherName;
@@ -622,7 +620,6 @@ typedef NS_ENUM(NSInteger, ControllerTag)
             // 获取成功
             if ([parentRelateInfoResult.isSuccess integerValue] == 0)
             {
-#warning todo
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"修改成功" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
                 alertView.tag = eSubmitSuccessAlertTag;
                 

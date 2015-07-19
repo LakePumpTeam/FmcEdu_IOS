@@ -504,7 +504,6 @@ typedef NS_ENUM(NSInteger, ControlTag) {
         // 成功
         if ([result.isSuccess integerValue] == 0) {
             
-#warning todo 更新显示按钮状态
             if (_actionType == eDoPassAction)
             {
                 _passButton.enabled = NO;
